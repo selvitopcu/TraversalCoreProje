@@ -1,0 +1,19 @@
+﻿@model CreateDestinationCommand
+@{
+    ViewData["Title"] = "AddDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Tur Rotası Ekleme Sayfası (CQRS)</h1>
+
+<form method="post">
+    <label>Şehir adı</label>
+    <input type="text" asp-for="City" class="form-control"/> <br />
+    <label>Gece Gün Sayısı</label>
+    <input type="text" asp-for="DayNight" class="form-control"/> <br />
+    <label>Fiyat</label>
+    <input type="text" asp-for="Price" class="form-control"/> <br />
+    <label>Kapasite</label>
+    <input type="text" asp-for="Capacity" class="form-control"/> <br />
+    <button class="btn btn-outline-primary">Tur Rotasını Kaydet</button>
+</form>

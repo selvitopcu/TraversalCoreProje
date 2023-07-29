@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<body>
+    <!--header-->
+
+    <!-- //header -->
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-left">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container py-2">
+                <h2 class="title">Hakkımızda</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Ana Sayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Hakkımızda </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <!-- /about-6-->
+    <section class="w3l-cta4 py-5">
+        <div class="container py-lg-5">
+            <div class="ab-section text-center">
+                <h6 class="sub-title">Bizi Tanıyın</h6>
+                <h3 class="hny-title">Tüm dünyada anılar yaratmak için seyahat edin.</h3><br />
+                <p class="py-3 mb-3">
+                    Türkiyede 56 Şehirde, yurtdışında 5 ülkede bulunan ofislerimiz ve online sunduğumuz hizmetimizle bize dilediğiniz zaman ulaşabilir, bizimle Dünya'nın tozunu attırabilirsiniz.
+                </p>
+
+                <p class="py-3 mb-3">
+                    Siz de kendinizi düşünün. Bize katılın konforlu seyehatın tadını çıkarın!!
+                </p>
+                <div class="ab-section text-center"> <a href="/Contact/Index/" class="btn btn-style btn-primary">İletişim Kur</a></div>
+            </div>
+
+        </div>
+
+
+
+        <section class="w3l-content-6 py-5">
+
+            <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-lg-6 content-6-left pr-lg-5">
+                    <h6 class="sub-title">Neden Biz?</h6>
+                    <h3 class="hny-title">Hayat, Konfor Bölgenizin Sonunda Başlar.</h3>
+                </div>
+                <br /><br />
+                <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                    <p class="mb-3">
+                        Yalnızca ülkemizin değil, tüm dünyanın tozunu attırın.
+                    </p>
+                    <p class="mb-3">
+                        Firmamız gerçekleştirdiği yurtdışı turlarının çeşitliliği ve sağladığımız konfor hizmeti sayesinde her yıl katılım oranlarımızda ciddi artışlar gözükmektedir.
+                    </p>
+                    <p class="mb-3">
+                        Uygun fiyat garantisi, ödeme yöntemlerinde esneklik, kaliteli ve konforlu seyehat imkanı, lüks otel konaklaması, seyehat türü seçiminde esneklik hizmetlerimizle sizi memnun etmeyi düşünüyoruz.
+                    </p>
+                        <p class=" mb-3">
+                            Uzman çalışanlarımız ile birlikte 1999 yılın'dan beri alanımızda en iyisiyiz.
+                        </p> <br />
+                        <a href="/Guide/Index/" class="btn btn-style btn-primary">Rehberlerimiz</a>
+                       
+                </div>
+            </div>
+        </div>
+        </section>
+ 
+
+    </section>
+
+    <div class="row mt-5">
+        <div class="col-md-9 mx-auto">
+            <img src="~/Traversal-Starter/assets/images/banner2.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+
+
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!-- stats number counter-->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //stats number counter -->
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
